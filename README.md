@@ -28,3 +28,8 @@ number of chunks as x-axis and interpolation order as y-axis.
 5- This photo is after changing the axis.
 
 ![image](https://github.com/hagerashraf/Interpolation-and-curve-fitting-for-a-medical-signal/assets/61332559/b82ce762-5594-4f63-bd36-e55ef2bbd887)
+
+6- This is after updating the mathematical table to include the mathematical equations of each chunks based on how many chunks the user chose.
+
+![image](https://github.com/hagerashraf/Interpolation-and-curve-fitting-for-a-medical-signal/assets/61332559/6bf02bdb-4538-444c-bb4b-6f3366b9bdd1)
+
