@@ -4,10 +4,10 @@
  <widget class="QMainWindow" name="MainWindow">
   <property name="geometry">
    <rect>
-    <x>0</x> 
+    <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>694</width>
+    <height>599</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -50,19 +50,19 @@
          <property name="currentIndex">
           <number>1</number>
          </property>
-         <widget class="QWidget" name="page">
+         <widget class="QWidget" name="CurvefittingOptionsPage1">
           <property name="geometry">
            <rect>
             <x>0</x>
             <y>0</y>
             <width>132</width>
-            <height>448</height>
+            <height>447</height>
            </rect>
           </property>
           <attribute name="label">
            <string>Page 1</string>
           </attribute>
-          <widget class="QLabel" name="label_3">
+          <widget class="QLabel" name="ExtrapolationLabel">
            <property name="geometry">
             <rect>
              <x>0</x>
@@ -132,7 +132,7 @@
             <number>0</number>
            </property>
           </widget>
-          <widget class="QLabel" name="label_4">
+          <widget class="QLabel" name="maxExtrapolationlabel">
            <property name="geometry">
             <rect>
              <x>0</x>
@@ -151,7 +151,7 @@
             <string>100%</string>
            </property>
           </widget>
-          <widget class="QLabel" name="label_5">
+          <widget class="QLabel" name="minExtrapolationLabel">
            <property name="geometry">
             <rect>
              <x>10</x>
@@ -170,7 +170,7 @@
             <string>10%</string>
            </property>
           </widget>
-          <widget class="QWidget" name="">
+          <widget class="QWidget" name="layoutWidget">
            <property name="geometry">
             <rect>
              <x>0</x>
@@ -179,9 +179,9 @@
              <height>89</height>
             </rect>
            </property>
-           <layout class="QVBoxLayout" name="verticalLayout_3">
+           <layout class="QVBoxLayout" name="numChunlsVerticalLayoutFittingOptions">
             <item>
-             <widget class="QLabel" name="label">
+             <widget class="QLabel" name="numChunksLabel">
               <property name="font">
                <font>
                 <family>Leelawadee</family>
@@ -219,19 +219,19 @@
            </layout>
           </widget>
          </widget>
-         <widget class="QWidget" name="page_2">
+         <widget class="QWidget" name="CurvefittingOptionsPage2">
           <property name="geometry">
            <rect>
             <x>0</x>
             <y>0</y>
             <width>132</width>
-            <height>448</height>
+            <height>447</height>
            </rect>
           </property>
           <attribute name="label">
            <string>Page 2</string>
           </attribute>
-          <widget class="QLabel" name="label_6">
+          <widget class="QLabel" name="OrderOfInterpolationLabel">
            <property name="geometry">
             <rect>
              <x>0</x>
@@ -331,7 +331,7 @@
             <string>Order</string>
            </property>
           </widget>
-          <widget class="QWidget" name="">
+          <widget class="QWidget" name="layoutWidget">
            <property name="geometry">
             <rect>
              <x>0</x>
@@ -340,9 +340,9 @@
              <height>42</height>
             </rect>
            </property>
-           <layout class="QVBoxLayout" name="verticalLayout_6">
+           <layout class="QVBoxLayout" name="numChunksFittingOptionsVerticalLayout">
             <item>
-             <widget class="QLabel" name="label_7">
+             <widget class="QLabel" name="ChunkNumberLabel">
               <property name="font">
                <font>
                 <family>Leelawadee</family>
@@ -361,7 +361,7 @@
             </item>
            </layout>
           </widget>
-          <widget class="QWidget" name="">
+          <widget class="QWidget" name="layoutWidget">
            <property name="geometry">
             <rect>
              <x>0</x>
@@ -370,9 +370,9 @@
              <height>108</height>
             </rect>
            </property>
-           <layout class="QVBoxLayout" name="verticalLayout_4">
+           <layout class="QVBoxLayout" name="typeofInterpolationFittingOptionsVerticalLayout">
             <item>
-             <widget class="QLabel" name="label_2">
+             <widget class="QLabel" name="typeofInterpolationLabel">
               <property name="font">
                <font>
                 <family>Leelawadee</family>
@@ -424,285 +424,6 @@
     </item>
     <item>
      <widget class="Line" name="line_2">
-      <property name="orientation">
-       <enum>Qt::Vertical</enum>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QWidget" name="DataContainer" native="true">
-      <property name="minimumSize">
-       <size>
-        <width>100</width>
-        <height>0</height>
-       </size>
-      </property>
-      <layout class="QVBoxLayout" name="verticalLayout_5">
-       <item>
-        <widget class="QLabel" name="MathematicsLabel">
-         <property name="maximumSize">
-          <size>
-           <width>16777215</width>
-           <height>15</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <family>Leelawadee</family>
-           <pointsize>11</pointsize>
-           <weight>75</weight>
-           <bold>true</bold>
-          </font>
-         </property>
-         <property name="text">
-          <string>Mathematics</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QWidget" name="MathDisplayArea" native="true"/>
-       </item>
-       <item>
-        <widget class="QLabel" name="ErrorMappingLabel_2">
-         <property name="maximumSize">
-          <size>
-           <width>16777215</width>
-           <height>15</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <family>Leelawadee</family>
-           <pointsize>11</pointsize>
-           <weight>75</weight>
-           <bold>true</bold>
-          </font>
-         </property>
-         <property name="text">
-          <string>Error Mapping </string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QWidget" name="widget_3" native="true">
-         <widget class="QPushButton" name="ErrorMappingButton">
-          <property name="geometry">
-           <rect>
-            <x>10</x>
-            <y>180</y>
-            <width>75</width>
-            <height>23</height>
-           </rect>
-          </property>
-          <property name="text">
-           <string>Run EM</string>
-          </property>
-         </widget>
-         <widget class="QProgressBar" name="ErrorMappingProgressBar">
-          <property name="geometry">
-           <rect>
-            <x>110</x>
-            <y>180</y>
-            <width>171</width>
-            <height>23</height>
-           </rect>
-          </property>
-          <property name="value">
-           <number>0</number>
-          </property>
-          <property name="textVisible">
-           <bool>true</bool>
-          </property>
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-          <property name="invertedAppearance">
-           <bool>false</bool>
-          </property>
-         </widget>
-         <widget class="QLabel" name="label_8">
-          <property name="geometry">
-           <rect>
-            <x>10</x>
-            <y>90</y>
-            <width>47</width>
-            <height>16</height>
-           </rect>
-          </property>
-          <property name="font">
-           <font>
-            <family>Leelawadee</family>
-            <pointsize>9</pointsize>
-            <weight>75</weight>
-            <bold>true</bold>
-           </font>
-          </property>
-          <property name="text">
-           <string>X-axis</string>
-          </property>
-         </widget>
-         <widget class="QLabel" name="label_9">
-          <property name="geometry">
-           <rect>
-            <x>10</x>
-            <y>120</y>
-            <width>47</width>
-            <height>16</height>
-           </rect>
-          </property>
-          <property name="font">
-           <font>
-            <family>Leelawadee</family>
-            <pointsize>9</pointsize>
-            <weight>75</weight>
-            <bold>true</bold>
-           </font>
-          </property>
-          <property name="text">
-           <string>Y-axis</string>
-          </property>
-         </widget>
-         <widget class="QWidget" name="widget" native="true">
-          <property name="geometry">
-           <rect>
-            <x>70</x>
-            <y>80</y>
-            <width>221</width>
-            <height>31</height>
-           </rect>
-          </property>
-          <widget class="QRadioButton" name="xAxisNumChunksRadioBtn">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>10</y>
-             <width>82</width>
-             <height>17</height>
-            </rect>
-           </property>
-           <property name="text">
-            <string>Num Chunks</string>
-           </property>
-          </widget>
-          <widget class="QRadioButton" name="xAxisInterpolationRadioBtn">
-           <property name="geometry">
-            <rect>
-             <x>100</x>
-             <y>10</y>
-             <width>151</width>
-             <height>17</height>
-            </rect>
-           </property>
-           <property name="text">
-            <string>Interpolation order</string>
-           </property>
-          </widget>
-         </widget>
-         <widget class="QWidget" name="widget_2" native="true">
-          <property name="geometry">
-           <rect>
-            <x>70</x>
-            <y>110</y>
-            <width>221</width>
-            <height>31</height>
-           </rect>
-          </property>
-          <widget class="QRadioButton" name="yAxisNumChunksRadioBtn">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>10</y>
-             <width>82</width>
-             <height>17</height>
-            </rect>
-           </property>
-           <property name="text">
-            <string>Num Chunks</string>
-           </property>
-          </widget>
-          <widget class="QRadioButton" name="yAxisInterpolationRadioBtn">
-           <property name="geometry">
-            <rect>
-             <x>100</x>
-             <y>10</y>
-             <width>151</width>
-             <height>17</height>
-            </rect>
-           </property>
-           <property name="text">
-            <string>Interpolation order</string>
-           </property>
-          </widget>
-         </widget>
-         <widget class="QLabel" name="label_10">
-          <property name="geometry">
-           <rect>
-            <x>10</x>
-            <y>10</y>
-            <width>91</width>
-            <height>16</height>
-           </rect>
-          </property>
-          <property name="font">
-           <font>
-            <family>Leelawadee</family>
-            <pointsize>9</pointsize>
-            <weight>75</weight>
-            <bold>true</bold>
-           </font>
-          </property>
-          <property name="text">
-           <string>Choose Chunk</string>
-          </property>
-         </widget>
-         <widget class="QLabel" name="label_11">
-          <property name="geometry">
-           <rect>
-            <x>10</x>
-            <y>50</y>
-            <width>91</width>
-            <height>16</height>
-           </rect>
-          </property>
-          <property name="font">
-           <font>
-            <family>Leelawadee</family>
-            <pointsize>9</pointsize>
-            <weight>75</weight>
-            <bold>true</bold>
-           </font>
-          </property>
-          <property name="text">
-           <string>Choose Order</string>
-          </property>
-         </widget>
-         <widget class="QComboBox" name="ChooseChunkComboBox">
-          <property name="geometry">
-           <rect>
-            <x>140</x>
-            <y>10</y>
-            <width>131</width>
-            <height>22</height>
-           </rect>
-          </property>
-         </widget>
-         <widget class="QComboBox" name="ChooseOrderComboBox">
-          <property name="geometry">
-           <rect>
-            <x>140</x>
-            <y>50</y>
-            <width>131</width>
-            <height>22</height>
-           </rect>
-          </property>
-         </widget>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-    </item>
-    <item>
-     <widget class="Line" name="line">
       <property name="orientation">
        <enum>Qt::Vertical</enum>
       </property>
@@ -784,6 +505,342 @@
       </layout>
      </widget>
     </item>
+    <item>
+     <widget class="Line" name="line">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="DataContainer" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>100</width>
+        <height>0</height>
+       </size>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <widget class="QLabel" name="MathematicsLabel">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Leelawadee</family>
+           <pointsize>11</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Mathematics</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="MathDisplayArea" native="true"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="ErrorMappingLabel_2">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Leelawadee</family>
+           <pointsize>11</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Error Mapping </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="ErrorMappingContainer" native="true">
+         <widget class="QPushButton" name="ErrorMappingButton">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>180</y>
+            <width>75</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Run EM</string>
+          </property>
+         </widget>
+         <widget class="QProgressBar" name="ErrorMappingProgressBar">
+          <property name="geometry">
+           <rect>
+            <x>110</x>
+            <y>180</y>
+            <width>171</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="value">
+           <number>0</number>
+          </property>
+          <property name="textVisible">
+           <bool>true</bool>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="invertedAppearance">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="XaxisLabel">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>100</y>
+            <width>47</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Leelawadee</family>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>X-axis</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="YaxisLabel">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>140</y>
+            <width>47</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Leelawadee</family>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Y-axis</string>
+          </property>
+         </widget>
+         <widget class="QWidget" name="xAxisOptionsContainer" native="true">
+          <property name="geometry">
+           <rect>
+            <x>70</x>
+            <y>90</y>
+            <width>241</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <widget class="QRadioButton" name="xAxisNumChunksRadioBtn">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>10</y>
+             <width>82</width>
+             <height>17</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Num Chunks</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="xAxisInterpolationRadioBtn">
+           <property name="geometry">
+            <rect>
+             <x>80</x>
+             <y>10</y>
+             <width>151</width>
+             <height>17</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Interp order</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="xAxisOverlapRadioBtn">
+           <property name="geometry">
+            <rect>
+             <x>160</x>
+             <y>10</y>
+             <width>151</width>
+             <height>17</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>OverLap</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="yAxisOptionsContainer" native="true">
+          <property name="geometry">
+           <rect>
+            <x>70</x>
+            <y>130</y>
+            <width>221</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <widget class="QRadioButton" name="yAxisNumChunksRadioBtn">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>10</y>
+             <width>82</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Num Chunks</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="yAxisInterpolationRadioBtn">
+           <property name="geometry">
+            <rect>
+             <x>80</x>
+             <y>10</y>
+             <width>151</width>
+             <height>17</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Interp order</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="yAxisOverLapRadioBtn">
+           <property name="geometry">
+            <rect>
+             <x>160</x>
+             <y>10</y>
+             <width>151</width>
+             <height>17</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>OverLap</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QLabel" name="chooseChunkLabel">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>0</y>
+            <width>91</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Leelawadee</family>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Choose Chunk</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="chooseOrderLabel">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>30</y>
+            <width>91</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Leelawadee</family>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Choose Order</string>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="ChooseChunkComboBox">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>0</y>
+            <width>131</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="ChooseOrderComboBox">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>30</y>
+            <width>131</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="ChooseOverLapLabel">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>60</y>
+            <width>91</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Leelawadee</family>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Choose OverLap</string>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="ChooseOverlappingComboBox">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>60</y>
+            <width>131</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
    </layout>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -791,7 +848,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>694</width>
      <height>21</height>
     </rect>
    </property>
